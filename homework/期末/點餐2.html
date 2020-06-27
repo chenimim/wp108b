@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+
 <html>
 
-<style>
+  <style>
 
     #ss {
       background-image:url("https://i.postimg.cc/Rh7G6w00/unnamed.jpg");
@@ -24,28 +24,59 @@
 
 </style>
 
+
 <header>
-    <h1 id="ss">線上點餐 </h1>
+  <h1 id="ss">線上點餐 </h1>
 </header>
 
-<div class="main">
-    <form>
-    <h2 class="font_color_brown">‧訂餐內容</h2>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="0.css"/>
+  </head>
 
-      <fieldset>
-
-        <td>小計:</td>
-        <td>
-        <span class="small-price">$<span class="integer" id="Cart_TotalSum">0</span>
-        </span>
-        </td>
-
-        <input style="padding: 10px;
-        background-color:	#F5F5DC;
-        border: 1px solid #A52A2A;"type="button" value="確認送出" onclick="location.href='http://localhost:52330/homework/%E6%9C%9F%E6%9C%AB/%E9%BB%9E%E9%A4%903.html'">
+  <h2 class="font_color_brown">‧訂餐內容</h2>
+  
+  <body onload="Shop.start()">
+  <header>
+    <div class="navbar" style="float:left">
+      <a onclick="Ui.openNav()" style="cursor:pointer">&#9776;</a>
+    </div>
+    <div class="navbar" style="float:right">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-user"></i>
+          <i class="fa fa-caret-down"></i>
+        </button>
         
-      </fieldset>
-    </form>
-  </div>
+      </div>
+      <a href="#Shop" id="menuShopName">店名</a>
+    </div>
+  </header>
+  
+  <main>
+    <div id="main" class="table" style="text-align:center">
+    </div>
+  </main>
 
-</html>
+  <div class="main">
+    <form>
+    
+
+
+ <input style="padding: 10px;
+        background-color:	#F5F5DC;
+        border: 1px solid #A52A2A;"type="button" value="確認送出" onclick="location.href='點餐3.html'">
+      
+    </form>
+  
+  <footer>
+  </footer>
+  <script src="1.js"></script>
+  <script src="2.js"></script>
+  <script src="3.js"></script>
+  <script src="4.js"></script>
+  <script src="5.js"></script>
+  <script src="6.js"></script>
+  </body>
+  </html>
